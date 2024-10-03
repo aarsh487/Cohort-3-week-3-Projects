@@ -1,0 +1,145 @@
+/* Reset some default styles */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #e6e6e6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    transition: background-color 0.5s ease;
+}
+
+/* Main container styles */
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    max-width: 600px;
+    background: linear-gradient(145deg, #ffffff, #e6e6e6);
+    border-radius: 20px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1),
+                -10px -10px 20px rgba(255, 255, 255, 0.7);
+    padding: 40px;
+    text-align: center;
+}
+
+/* Title styles */
+h1 {
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 24px;
+}
+
+/* Button container styles */
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+/* Button styles */
+button {
+    padding: 15px 25px;
+    font-size: 18px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: bold;
+    position: relative;
+    overflow: hidden;
+    color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+button:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300%;
+    height: 300%;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    transition: all 0.5s ease;
+    transform: translate(-50%, -50%) scale(0);
+    z-index: 0;
+}
+
+button:hover:before {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+/* Button colors */
+.leftColor {
+    background: #ff4d4d; /* Red */
+}
+
+.leftColor:hover {
+    background: #e60000;
+}
+
+.centerColor {
+    background: #f0f0f0; /* Default */
+    color: black;
+}
+
+.centerColor:hover {
+    background: #d9d9d9;
+}
+
+.rightColor {
+    background: #4d94ff; /* Blue */
+}
+
+.rightColor:hover {
+    background: #0052cc;
+}
+
+/* Additional button colors */
+#yellow {
+    background: #ffd633; /* Yellow */
+}
+
+#yellow:hover {
+    background: #e6b800;
+}
+
+#black {
+    background: #333333; /* Black */
+}
+
+#black:hover {
+    background: #1a1a1a;
+}
+
+#purple {
+    background: #8a33ff; /* Purple */
+}
+
+#purple:hover {
+    background: #6f26cc;
+}
+
+#green {
+    background: #33cc33; /* Green */
+}
+
+#green:hover {
+    background: #28a745;
+}
+
+/* Footer styles */
+.footer {
+    margin-top: 20px;
+    color: #666;
+    font-size: 14px;
+}
+
+/* Hover effects */
+button:active {
+    transform: scale(0.95);
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Color Changer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+        <h1>Background Color Changer</h1>
+        <div class="button-container">
+            <div class="left">
+                <button class="leftColor" id="red" onClick="changeRed()">🌹 Red</button>
+                <button class="leftColor" id="yellow" onClick="changeYellow()">🌼 Yellow</button>
+                <button class="leftColor" id="black" onClick="changeBlack()">⚫ Black</button>
+            </div>
+
+            <div class="center">
+                <button class="centerColor" id="default" onClick="changeDefault()">🔄 Default</button>
+            </div>
+
+            <div class="right">
+                <button class="rightColor" id="purple" onClick="changePurple()">💜 Purple</button>
+                <button class="rightColor" id="green" onClick="changeGreen()">🍀 Green</button>
+                <button class="rightColor" id="blue" onClick="changeBlue()">🔵 Blue</button>
+            </div>
+        </div>
+        <p class="footer">Choose a color to change the background!</p>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
