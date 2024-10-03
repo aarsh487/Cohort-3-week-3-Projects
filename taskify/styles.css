@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #e0e7ff, #f0f4ff); /* Soft gradient */
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#app {
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 90%;
+    max-width: 800px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #4a4e69; /* Darker color for headings */
+}
+
+.categories {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.category {
+    background: #f9f9f9; /* Light gray for category background */
+    border-radius: 5px;
+    padding: 10px;
+    width: 30%;
+    min-height: 250px;
+    transition: background 0.3s;
+}
+
+.category:hover {
+    background: #f0f0f0; /* Slightly darker on hover */
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.task-list {
+    margin-top: 10px;
+    padding: 10px;
+    min-height: 180px;
+    border: 1px dashed #ccc; /* Subtle border for task list */
+    border-radius: 5px;
+}
+
+.task {
+    background: #d0e1f9; /* Soft blue for tasks */
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: grab;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.task:active {
+    cursor: grabbing;
+}
+
+.task-input {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+button {
+    background: #4a4e69; /* Dark gray for buttons */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #3b3f58; /* Darker on hover */
+}
